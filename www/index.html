@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav class="login_nav">
+    <ul>
+      <li>
+        <h4 style="color:dodgerblue;">welcome</h4>
+        <h4 id="username" style="color: limegreen"></h4>
+        <h4 id="score_label" hidden=true>Score</h4>
+        <h4 id="score" style="color: rgb(255, 0, 0)" hidden=true></h4>
+      </li>
+      <li><button id="login_button" type="button" onclick="login_index()">login</button></li>
+      <li><button id="logout_button" type="button" onclick="logout()" hidden=true>logOut</button></li>
+    </ul>
+  </nav>
+  <main class="modal-content">
+    <div>
+      <button type="button" onclick="getWordOfTheDay()">Discover the word of the day</button>
+    </div>
+    <h3 id="wordOfDay" style="text-align:center ;"></h3><br>
+    <div>
+      <input type="text" id="word" name="word" value="Your try ..."><br>
+      <button type="button" onclick="printVerdict()">Check</button>
+      <p class="verdict" id="verdict"></p>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
